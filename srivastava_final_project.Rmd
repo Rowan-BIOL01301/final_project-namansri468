@@ -1,7 +1,7 @@
 ---
 title: "Final Project"
 subtitle: "Data Science for Biologists, Spring 2021"
-author: "Your name goes here"
+author: "Naman Srivastava"
 output: html_document
 editor_options: 
   chunk_output_type: console
@@ -12,6 +12,8 @@ editor_options:
 knitr::opts_chunk$set(warning=FALSE, message=FALSE, echo = TRUE, include = TRUE)
 
 # Load all libraries you use HERE:
+library(ggthemr)
+
 ```
 
 <br><br>
