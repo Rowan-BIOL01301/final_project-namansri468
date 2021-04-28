@@ -2,7 +2,12 @@
 title: "Final Project"
 subtitle: "Data Science for Biologists, Spring 2021"
 author: "Naman Srivastava"
-output: html_document
+output: 
+  rmdformats::downcute:
+    self_contained: true
+    lightbox: true
+    gallery: false
+    highlight: tango
 editor_options: 
   chunk_output_type: console
 ---
@@ -12,8 +17,10 @@ editor_options:
 knitr::opts_chunk$set(warning=FALSE, message=FALSE, echo = TRUE, include = TRUE)
 
 # Load all libraries you use HERE:
+library(tidyverse)
 library(ggthemr)
-
+library(rmdformats)
+library(AMR)
 ```
 
 <br><br>
@@ -21,6 +28,7 @@ library(ggthemr)
 ## Introduction
 
 ```{r read-examine-data}
+
 
 ```
 
@@ -31,6 +39,12 @@ library(ggthemr)
 #### REPLACE TEXT WITH YOUR QUESTION. Your question should literally be a level-4 header.
 
 ### Methods
+
+```{r}
+
+
+```
+
 
 ### Answer
 
@@ -45,6 +59,12 @@ Replace this text with your answer to your question.
 
 ### Methods
 
+```{r}
+
+
+```
+
+
 ### Answer
 
 Replace this text with your answer to your question.
@@ -56,6 +76,12 @@ Replace this text with your answer to your question.
 #### REPLACE TEXT WITH YOUR QUESTION. Your question should literally be a level-4 header.
 
 ### Methods
+
+```{r}
+
+
+```
+
 
 ### Answer
 
@@ -69,6 +95,13 @@ Replace this text with your answer to your question.
 #### REPLACE TEXT WITH YOUR QUESTION. Your question should literally be a level-4 header.
 
 ### Methods
+
+```{r}
+
+
+
+```
+
 
 ### Answer
 
