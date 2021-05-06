@@ -21,11 +21,16 @@ library(tidyverse)
 library(ggthemr)
 library(rmdformats)
 library(AMR)
+library(globe4r)
 ```
 
 <br><br>
 
 ## Introduction
+
+This data comes from the Antimicrobial resistance package titled AMR, which is frequently used for epidemiological investigations. I am particularly interested in the field of antibiotic resistance and this r package contains a wide variety of suitable data that can be used for prediction analyses and data visualization.
+
+[AMR Package](https://msberends.github.io/AMR/index.html)
 
 ```{r read-examine-data}
 
@@ -41,6 +46,7 @@ library(AMR)
 ### Methods
 
 ```{r}
+
 
 
 ```
@@ -62,6 +68,7 @@ Replace this text with your answer to your question.
 ```{r}
 
 
+
 ```
 
 
@@ -78,6 +85,7 @@ Replace this text with your answer to your question.
 ### Methods
 
 ```{r}
+
 
 
 ```
