@@ -22,6 +22,7 @@ library(ggthemr)
 library(rmdformats)
 library(AMR)
 library(globe4r)
+library(plotly)
 ```
 
 <br><br>
@@ -66,7 +67,6 @@ Replace this text with your answer to your question.
 ### Methods
 
 ```{r}
-
 
 
 ```
