@@ -35,10 +35,14 @@ This data comes from the Antimicrobial resistance package titled AMR, which is f
 
 ```{r read-examine-data}
 
+glimpse(microorganisms)
+glimpse(antibiotics)
+glimpse(example_isolates)
+glimpse(WHONET)
 
 ```
 
-<br><br>
+<br>
 
 ## Question 1
 
@@ -67,6 +71,7 @@ Replace this text with your answer to your question.
 ### Methods
 
 ```{r}
+
 
 
 ```
