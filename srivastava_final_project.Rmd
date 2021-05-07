@@ -188,4 +188,4 @@ Based on this plot we can conclude that resistance against Doxycycline will incr
 
 ### Answer
 
-Replace this text with your answer to your question.
+The data in the WHONET dataset seems to come from locations in central and northern Europe.
