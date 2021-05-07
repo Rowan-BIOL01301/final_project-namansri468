@@ -150,7 +150,6 @@ ggthemr("light") #Set theme
 
 Based on this plot we can conclude that resistance against Doxycycline will increase in Gram positive bacteria in the future.
 
-
 <br><br>
 
 ## Question 4
@@ -161,7 +160,28 @@ Based on this plot we can conclude that resistance against Doxycycline will incr
 
 ```{r}
 
-
+  img <- image_url("blue-marble") #texture for globe
+  
+  WHONET%>% #Create main pipe
+    select(Country)%>% #Subset to country
+    mutate(code = case_when( #Insert new code column
+      Country == "Belgium" ~ "BEL", #Change Belgium to BEL in code col
+      Country == "The Netherlands" ~ "NLD", #Change The Netherlands to NLD in code col
+      Country == "Denmark" ~ "DNK", #Change Denmark to DNK in code col
+      Country == "France" ~ "FRA", #Change France to FRA in code col
+      Country == "Germany" ~ "DEU"))%>% #Change Germany to DEU in code col
+    count(code) -> Updated_countries # count countries in code col
+  
+  create_globe()%>%
+    globe_img_url(img) %>% #Change globe texture to img texture
+    globe_choropleth(
+      data = Updated_countries, #Use Updated_countries dataset
+      coords(country = code, #Plot coordinates using code col
+             cap_color = n, #Color countries based on count
+             altitude = n))%>% #Elevate countries based on count
+    globe_background("#f7f7f7")%>% #Change background color
+    scale_choropleth_cap_color()%>% #Include cap color
+    scale_choropleth_altitude(0.06, 0.1) #Reduce altitude scale
 
 ```
 
