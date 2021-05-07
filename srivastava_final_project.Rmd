@@ -148,7 +148,7 @@ ggthemr("light") #Set theme
 
 ### Answer
 
-Based on this plot we can conclude that resistance against Doxycycline will increase in Gram positive bacteria in the future.
+Based on this plot we can conclude that resistance against Doxycycline will increase in Gram positive bacteria in the coming years.
 
 <br><br>
 
@@ -188,4 +188,4 @@ Based on this plot we can conclude that resistance against Doxycycline will incr
 
 ### Answer
 
-The data in the WHONET dataset seems to come from locations in central and northern Europe.
+The data in the WHONET dataset seems to have been compiled in locations from central and northern Europe.
