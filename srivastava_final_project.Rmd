@@ -52,7 +52,23 @@ glimpse(WHONET)
 
 ```{r}
 
-
+ggthemr("light") #Set theme
+  microorganisms%>% #Main Pipe
+    filter(kingdom == "Fungi")%>% #Subset data to only keep Fungi
+    select(phylum)%>% #Keep only phylums
+    count(phylum)%>% #Count Phylums
+    ggplot()+
+    aes(y=reorder(phylum, +n), #Map y-axis and reorder phylums descendingly 
+        x=n, #Map counts to x-axis
+        fill = phylum)+ #Fill based on phylum
+    geom_col()+
+    scale_x_log10()+ #Change x to a log scale
+    labs(y = "Phylums", #X-axis label
+         x = "Count",  #Y-axis label
+         title = "Fungi Phylums examined within microorganisms dataset")+ #Add title
+    theme(legend.position = "none", #Remove legend
+          plot.background = element_rect(fill = "#f7f7f7")) -> Plot1 #Change background color
+  ggplotly(Plot1, tooltip = c("n", "phylum")) #Change hover label to only n and phylum
 
 ```
 
@@ -85,7 +101,7 @@ Replace this text with your answer to your question.
 
 ## Question 3
 
-#### In the future, do we expect Gram-positive Bacteria to become more or less resistant to the antibiotic Doxycyclinein?
+#### In the future, do we expect Gram-positive Bacteria to become more or less resistant to the antibiotic Doxycycline?
 
 ### Methods
 
