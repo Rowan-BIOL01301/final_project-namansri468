@@ -118,7 +118,30 @@ Yes, we can observe a positive linear relationship between oral and iv dosages o
 
 ```{r}
 
-
+ggthemr("light") #Set theme
+  example_isolates %>% #Create main pipe
+    filter(mo_gramstain(mo, language = NULL) == "Gram-positive")%>% #Subset to Gram positive bacteria
+    resistance_predict(col_ab = "DOX", #Predict resistance on Doxycycline
+                       col_date = "date",
+                       model = "binomial",
+                       info = FALSE,
+                       minimum = 15)%>%
+    ggplot() +
+    aes(x = year, #Map x-axis to year
+        y = value)+ #Map y-axis to resistance value
+    geom_col() + #Create barplot
+    geom_errorbar(aes(ymin = se_min, #lower bar is the min standard error
+                      ymax = se_max), #higher bar is the max standard error
+                  color = "#31a183", #Change color
+                  width=0.6) + #Change the width of bars
+    scale_y_continuous(limits = c(0, 1), #limits of y-axis
+                       breaks = seq(0, 1, 0.1), #Add a breakage each 0.1
+                       labels = paste0(seq(0, 100, 10), "%")) + #Change y-axis labels to percentages
+    labs(title = "Forecast of Doxycycline Resistance in Gram-positive Bacteria", #Add title
+         y = "%R", #Label y-axis
+         x = "Year")+ #Label x-axis
+    theme(plot.background = element_rect(fill = "#f7f7f7"))-> Plot3 #Change background color 
+  ggplotly(Plot3)
 
 ```
 
