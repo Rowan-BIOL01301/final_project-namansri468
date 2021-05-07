@@ -106,7 +106,7 @@ ggthemr("light") #Set theme
 
 ### Answer
 
-Replace this text with your answer to your question.
+Yes, we can observe a positive linear relationship between oral and iv dosages of antibiotics.
 
 <br><br>
 
