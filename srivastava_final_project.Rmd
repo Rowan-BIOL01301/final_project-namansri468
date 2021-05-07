@@ -46,7 +46,7 @@ glimpse(WHONET)
 
 ## Question 1
 
-#### REPLACE TEXT WITH YOUR QUESTION. Your question should literally be a level-4 header.
+#### Which Phylum of Fungi is most prevalent within the microorganisms dataset?
 
 ### Methods
 
@@ -66,7 +66,7 @@ Replace this text with your answer to your question.
 
 ## Question 2
 
-#### REPLACE TEXT WITH YOUR QUESTION. Your question should literally be a level-4 header.
+#### Is there a linear relationship between oral and iv dosages of antibiotics?
 
 ### Methods
 
@@ -85,7 +85,7 @@ Replace this text with your answer to your question.
 
 ## Question 3
 
-#### REPLACE TEXT WITH YOUR QUESTION. Your question should literally be a level-4 header.
+#### In the future, do we expect Gram-positive Bacteria to become more or less resistant to the antibiotic Doxycyclinein?
 
 ### Methods
 
@@ -105,7 +105,7 @@ Replace this text with your answer to your question.
 
 ## Question 4
 
-#### REPLACE TEXT WITH YOUR QUESTION. Your question should literally be a level-4 header.
+#### Geographically, where was the data from the WHONET dataset compiled?
 
 ### Methods
 
