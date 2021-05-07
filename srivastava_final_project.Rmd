@@ -88,7 +88,18 @@ The Fungi Phylum Ascomycota seems to be the most prevalent within this dataset.
 
 ```{r}
 
-
+ggthemr("light") #Set theme
+  ggplot(antibiotics)+ #Use antibiotics dataset
+    aes(x = oral_ddd, #Map x-axis to oral dosages
+        y = iv_ddd)+ #Map y-axis to iv dosages
+    geom_point()+ #Create scatterplot
+    labs(y = "IV Dosage", #Y-axis label
+         x = "Oral Dosage", #X-axis label
+         title = "Oral vs IV Dosgaes of Antibiotics")+ #Add title
+    scale_x_log10()+ #Log scale x-axis
+    scale_y_log10()+ #Log scale y-axis
+    theme(plot.background = element_rect(fill = "#f7f7f7")) -> Plot2 #Change background color
+  ggplotly(Plot2)
 
 ```
 
