@@ -148,7 +148,7 @@ ggthemr("light") #Set theme
 
 ### Answer
 
-Replace this text with your answer to your question.
+Based on this plot we can conclude that resistance against Doxycycline will increase in Gram positive bacteria in the future.
 
 
 <br><br>
